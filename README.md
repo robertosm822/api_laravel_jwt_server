@@ -59,6 +59,18 @@ Abra o arquivo de config/app.php e atualize o array de provedores e pseudônimos
 
 <!-- terminar de documentar os recursos criados => https://www.avyatech.com/rest-api-with-laravel-8-using-jwt-token/ -->
 
+## Comandos basicos para gerenciar o SqLite3
+
+    `sqlite3 --version`
+    
+    Conectar a base criada em databases:
+    
+    `sqlite3 database/database.sqlite`
+
+    Listar todas as tabelas criadas:
+
+    `.tables`
+  
 
 ## About Laravel
 
