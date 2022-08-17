@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ExecProcedureController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,4 +30,7 @@ Route::group(['middleware' => ['jwt.verify']], function() {
     Route::get('logout', [App\Http\Controllers\ApiController::class, 'logout']);
     Route::get('get_user', [ApiController::class, 'get_user']);
     Route::get('products', [ProductController::class, 'index']);
+
+    //teste de receber multiplos paramentos de procs
+    Route::post('procedure', [ExecProcedureController::class, 'execProcedure']);
 });
